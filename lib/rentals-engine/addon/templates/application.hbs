@@ -3,7 +3,12 @@
   <h2>Welcome!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
 </div>
-{{#each this.model as |rentalUnit|}}
-  <RentalListing @rental={{rentalUnit}} />
-{{/each}}
+<Filter @list={{this.model}} as |filteredResults|>
+  <ul class="results">
+    {{#each filteredResults as |rentalUnit|}}
+      <li><RentalListing @rental={{rentalUnit}} /></li>
+    {{/each}}
+  </ul>
+</Filter>
+{{outlet}}
 {{outlet}}

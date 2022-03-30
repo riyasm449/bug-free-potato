@@ -1,7 +1,6 @@
 export default function() {
     this.namespace = '/api';
-    this.get('/rentals', function() {
-        console.log("Accessed");
+    this.get('/about', function() {
         return {
             data: [{
                 type: 'rentals',
@@ -43,7 +42,6 @@ export default function() {
         };
     });
     this.get('/rentals-engine', function() {
-        console.log("Engine Accessed");
         return {
             data: [{
                 type: 'rentals',

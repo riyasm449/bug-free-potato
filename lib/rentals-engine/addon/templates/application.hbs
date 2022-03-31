@@ -2,7 +2,11 @@
   <div class="right tomster"></div>
   <h2>Welcome!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
+  {{#link-to-external "about" class="button"}}
+    About
+  {{/link-to-external}}
 </div>
+
 <Filter @list={{this.model}} as |filteredResults|>
   <ul class="results">
     {{#each filteredResults as |rentalUnit|}}
@@ -10,5 +14,4 @@
     {{/each}}
   </ul>
 </Filter>
-{{outlet}}
 {{outlet}}

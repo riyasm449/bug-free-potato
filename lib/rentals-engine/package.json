@@ -11,5 +11,10 @@
     "dependencies": {
         "ember-cli-htmlbars": "*",
         "ember-cli-babel": "*"
+    },
+    "ember-addon": {
+        "paths": [
+            "../footer-addon"
+        ]
     }
 }

@@ -53,6 +53,7 @@
   },
   "ember-addon": {
     "paths": [
+      "lib/footer-addon",
       "lib/rentals-engine"
     ]
   }

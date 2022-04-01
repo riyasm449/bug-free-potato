@@ -6,7 +6,6 @@
     About
   {{/link-to-external}}
 </div>
-
 <Filter @list={{this.model}} as |filteredResults|>
   <ul class="results">
     {{#each filteredResults as |rentalUnit|}}
@@ -14,4 +13,5 @@
     {{/each}}
   </ul>
 </Filter>
+<FooterComponent class="center fixed-bottom" @text="This is a component from in-repo-addon"/>
 {{outlet}}

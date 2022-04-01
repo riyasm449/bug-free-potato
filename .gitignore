@@ -8,6 +8,7 @@
 /bower_components/
 /node_modules/
 /lib/rentals-engine/node_modules/
+/lib/footer-addon/node_modules/
 
 # misc
 /.env*

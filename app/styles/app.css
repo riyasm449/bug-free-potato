@@ -1,0 +1,10 @@
+.center {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-fixed {
+    position: fixed;
+    bottom: 0;
+}
